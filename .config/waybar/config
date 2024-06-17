@@ -1,0 +1,46 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 14, // Gaps between modules in px
+    "modules-left": [
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+        "custom/date"
+    ],
+    "modules-right": [
+        "network",
+        "clock",
+    ],
+    // Modules configuration
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+	"all-outputs": true,
+	"persistent-workspaces": {
+	    "1": [],
+	    "2": [],
+	    "3": [],
+	    "4": [],
+	    "5": []
+	},
+        "format": "{name}",
+    },
+    "clock": {
+    	"interval": 1,
+	"format": "{:%I:%M:%S %p}"
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected ⚠",
+        "on-click": "kitty nmtui"
+    },
+    "custom/date": {
+        "exec": "~/.config/waybar/scripts/date.sh",
+	"interval": 60,
+	"format": "{}",
+	"return-type": "string"
+    }
+}
