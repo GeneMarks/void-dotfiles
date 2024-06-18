@@ -3,5 +3,6 @@ autoload -Uz compinit
 compinit
 unsetopt BEEP
 
-alias tp='trash put'
+alias g='garbage'
+alias gp='garbage put'
 alias feh='feh --scale-down'
