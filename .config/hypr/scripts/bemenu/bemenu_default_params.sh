@@ -2,6 +2,7 @@
 
 export BEMENU_DEFAULT_PARAMS=(
     --single-instance
+    --ignorecase
     --center
     --list 10
     --fixed-height

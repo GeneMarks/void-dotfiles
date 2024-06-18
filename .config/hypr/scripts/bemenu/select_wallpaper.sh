@@ -3,9 +3,7 @@
 WALLPAPER_DIR=~/wallpapers
 WALLPAPER_CONF=$MY_HYPR_CONF/wallpaper.conf
 
-source $MY_HYPR_SCRIPTS/bemenu/bemenu_default_params.sh
-
-SELECTED_WALLPAPER=$(ls $WALLPAPER_DIR | bemenu ${BEMENU_DEFAULT_PARAMS[@]} \
+SELECTED_WALLPAPER=$(ls $WALLPAPER_DIR | $MY_HYPR_SCRIPTS/bemenu/run_bemenu.sh \
     --list 20 \
     --width-factor 0.18 \
     --prompt 'wallpapers')
