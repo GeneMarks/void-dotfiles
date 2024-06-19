@@ -24,4 +24,3 @@ else
 fi
 
 notify-send "Volume Control" "$MESSAGE" -h int:value:$VOLUME -h string:x-canonical-private-synchronous:sys-notify -t 3000
-
