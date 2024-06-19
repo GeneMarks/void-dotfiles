@@ -4,11 +4,11 @@
         "type": "none"
     },
     "display": {
-	"color": {
+        "color": {
             "title": "94",
             "keys": "94",
-	    "separator": "94"
-	}
+            "separator": "94"
+        }
     },
     "modules": [
         "title",
