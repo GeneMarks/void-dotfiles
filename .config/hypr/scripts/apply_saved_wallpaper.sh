@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f $MY_HYPR_CONF/wallpaper.conf ]; then
+if [ -f "$HOME/.cache/current_wallpaper" ]; then
     pkill swaybg
-    swaybg -i "$(cat $MY_HYPR_CONF/wallpaper.conf)" &
+    swaybg -i "$HOME/.cache/current_wallpaper" &
 fi
