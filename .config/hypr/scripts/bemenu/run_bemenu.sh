@@ -15,6 +15,7 @@ bemenu \
     --fb '#0f1014' \
     --nf '#c7bcb7' \
     --nb '#0f1014' \
+    --af '#c7bcb7' \
     --ab '#0f1014' \
     --tb '#0f1014' \
     --tf '#ffffff' \
