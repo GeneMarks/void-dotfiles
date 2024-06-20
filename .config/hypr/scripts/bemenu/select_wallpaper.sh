@@ -4,7 +4,7 @@ WALLPAPERS_DIR="$HOME/wallpapers"
 WALLPAPER="$HOME/.cache/current_wallpaper"
 
 SELECTED_WALLPAPER=$(ls $WALLPAPERS_DIR | $MY_HYPR_SCRIPTS/bemenu/run_bemenu.sh \
-    --list 20 \
+    --list 24 \
     --width-factor 0.18 \
     --prompt 'wallpapers')
 
