@@ -4,7 +4,6 @@
     "spacing": 12, // Gaps between modules in px
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window"
     ],
     "modules-center": [
         "custom/date"
