@@ -11,7 +11,7 @@ export BEMENU_DEFAULT_PARAMS=(
     --no-spacing
     --scrollbar autohide
     --prompt 'bemenu'
-    --fn 'Courier New 14'
+    --fn 'SystemUI 14'
     --fb '#0f1014'
     --nf '#c7bcb7'
     --nb '#0f1014'
