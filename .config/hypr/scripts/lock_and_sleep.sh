@@ -1,5 +1,5 @@
 #!/bin/bash
 
 physlock -d
-sleep 1
+sleep 5
 systemctl suspend
