@@ -7,7 +7,6 @@ bemenu \
     --list 10 \
     --fixed-height \
     --width-factor 0.26 \
-    --line-height 32 \
     --no-spacing \
     --scrollbar autohide \
     --prompt 'bemenu' \
