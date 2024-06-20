@@ -7,11 +7,11 @@ bemenu \
     --list 10 \
     --fixed-height \
     --width-factor 0.26 \
-    --line-height 22 \
+    --line-height 24 \
     --no-spacing \
     --scrollbar autohide \
     --prompt 'bemenu' \
-    --fn 'SystemUI 12' \
+    --fn 'SystemUI 10' \
     --fb '#0f1014' \
     --nf '#c7bcb7' \
     --nb '#0f1014' \

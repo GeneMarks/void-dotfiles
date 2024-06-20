@@ -1,5 +1,8 @@
 -- Themery block
 -- This block will be replaced by Themery.
-vim.cmd("colorscheme catppuccin-macchiato")
-vim.g.theme_id = 6
+vim.opt.background = "dark"
+
+
+vim.cmd("colorscheme oxocarbon")
+vim.g.theme_id = 13
 -- end themery block
