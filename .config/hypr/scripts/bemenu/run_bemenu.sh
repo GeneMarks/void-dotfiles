@@ -11,7 +11,7 @@ bemenu \
     --no-spacing \
     --scrollbar autohide \
     --prompt 'bemenu' \
-    --fn 'SystemUI 10' \
+    --fn 'SystemUI 12' \
     --fb '#0f1014' \
     --nf '#c7bcb7' \
     --nb '#0f1014' \
