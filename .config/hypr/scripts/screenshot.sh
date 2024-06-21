@@ -5,6 +5,7 @@ mkdir -p "$SS_FOLDER"
 
 SS_FILE="$SS_FOLDER/ss_$(date +'%Y-%m-%d-%H%M%S-%3N').png"
 
+# Save screenshot to disk
 if [[ $1 == "full" ]]; then
     grim "$SS_FILE"
 else
@@ -16,4 +17,7 @@ else
     grim -g "$SS_IMAGE" "$SS_FILE"
 fi
 
-notify-send "Screenshot saved" "Screenshot saved to $SS_FILE" -t 6000
+# Copy screenshot to clipboard
+wl-copy < $SS_FILE
+
+notify-send "Screenshot saved" "Screenshot copied and saved to $SS_FILE" -t 6000
