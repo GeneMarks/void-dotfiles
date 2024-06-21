@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=false
+
+Name=Thunderbird
+Exec=thunderbird %u
+
+Comment=Browse your email
+Categories=Network;Email;
+Keywords=Email;Browser;Explorer
+Icon=org.mozilla.Thunderbird
+
+MimeType=message/rfc822;x-scheme-handler/mailto;text/calendar;text/vcard;text/x-vcard;x-scheme-handler/webcal;x-scheme-handler/webcals;x-scheme-handler/mid;
+Actions=ComposeMessage;OpenAddressBook;
+
+[Desktop Action ComposeMessage]
+Name=Write new message
+Exec=thunderbird -compose
+
+[Desktop Action OpenAddressBook]
+Name=Open address book
+Exec=thunderbird -addressbook
