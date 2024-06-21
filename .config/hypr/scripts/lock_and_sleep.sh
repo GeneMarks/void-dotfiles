@@ -1,5 +1,4 @@
 #!/bin/bash
 
-physlock -d
-sleep 5
+hyprlock &
 systemctl suspend
