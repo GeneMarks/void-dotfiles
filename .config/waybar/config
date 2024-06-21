@@ -36,7 +36,7 @@
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
-        "on-click": "kitty nmtui"
+        "on-click": "foot nmtui"
     },
     "custom/date": {
         "exec": "~/.config/waybar/scripts/date.sh",
