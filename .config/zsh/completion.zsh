@@ -1,4 +1,3 @@
 ### Completion ###
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit

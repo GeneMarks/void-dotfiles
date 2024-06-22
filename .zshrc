@@ -7,6 +7,9 @@ source $HOME/.config/zsh/aliases.zsh
 # Load settings
 source $HOME/.config/zsh/settings.zsh
 
+# Set prompt
+source $HOME/.config/zsh/prompt.zsh
+
 # Load completion settings
 source $HOME/.config/zsh/completion.zsh
 
