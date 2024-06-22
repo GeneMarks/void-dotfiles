@@ -3,7 +3,7 @@ Type=Application
 NoDisplay=false
 
 Name=neovim
-Exec=foot -e nvim
+Exec=foot nvim
 
 Comment=Edit text files
 Categories=Utility;TextEditor;

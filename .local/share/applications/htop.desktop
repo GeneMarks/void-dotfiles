@@ -3,7 +3,7 @@ Type=Application
 NoDisplay=false
 
 Name=htop
-Exec=foot -e htop
+Exec=foot htop
 
 Comment=Show System Processes
 Categories=System;Monitor;ConsoleOnly;
