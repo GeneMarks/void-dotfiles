@@ -1,10 +1,14 @@
-zstyle :compinstall filename '/home/gene/.zshrc'
-autoload -Uz compinit
-compinit
-unsetopt BEEP
+# Load environment variables
+source $HOME/.config/zsh/env_variables.zsh
 
-alias g='garbage'
-alias gp='garbage put'
-alias feh='feh --scale-down'
+# Load aliases
+source $HOME/.config/zsh/aliases.zsh
 
-source /usr/share/nvm/init-nvm.sh
+# Load settings
+source $HOME/.config/zsh/settings.zsh
+
+# Load completion settings
+source $HOME/.config/zsh/completion.zsh
+
+# Load external scripts
+source $HOME/.config/zsh/external_scripts.zsh
