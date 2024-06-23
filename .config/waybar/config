@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "spacing": 12, // Gaps between modules in px
+    "spacing": 10, // Gaps between modules in px
     "modules-left": [
         "hyprland/workspaces",
     ],
@@ -9,8 +9,7 @@
         "custom/date"
     ],
     "modules-right": [
-        "network",
-        "clock",
+        "clock"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -29,14 +28,6 @@
     "clock": {
     	"interval": 1,
 	"format": "{:%I:%M:%S %p}"
-    },
-    "network": {
-        "format-wifi": "",
-        "format-ethernet": "",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "Disconnected ⚠",
-        "on-click": "foot nmtui"
     },
     "custom/date": {
         "exec": "~/.config/waybar/scripts/date.sh",
