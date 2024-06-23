@@ -38,7 +38,7 @@
   "themery.nvim": { "branch": "main", "commit": "673001e8f4456e295f7b4fa7f9f41cc218835fe4" },
   "toggleterm.nvim": { "branch": "main", "commit": "066cccf48a43553a80a210eb3be89a15d789d6e6" },
   "trim.nvim": { "branch": "master", "commit": "4fe47a46c02a58894ded8328ca81f6c214a892f5" },
-  "trouble.nvim": { "branch": "main", "commit": "2d8610a07033f2b367e71230ab128f8b89c2639d" },
+  "trouble.nvim": { "branch": "main", "commit": "82042f7bf42ebedc8f2751f0ab16ebaff42c1ce7" },
   "vim-fugitive": { "branch": "master", "commit": "64d6cafb9dcbacce18c26d7daf617ebb96b273f3" },
   "which-key.nvim": { "branch": "main", "commit": "0099511294f16b81c696004fa6a403b0ae61f7a0" }
 }
