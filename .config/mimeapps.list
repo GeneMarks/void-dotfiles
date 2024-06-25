@@ -8,13 +8,14 @@ image/bmp=feh.desktop
 image/tiff=feh.desktop
 image/webp=feh.desktop
 
+audio/flac=mpv.desktop
+audio/x-flac=mpv.desktop
 audio/aac=mpv.desktop
+audio/x-m4a=mpv.desktop
+audio/ogg=mpv.desktop
 audio/mp4=mpv.desktop
 audio/vnd.wav=mpv.desktop
 audio/midi=mpv.desktop
-audio/x-ms-wma=mpv.desktop
-audio/x-flac=mpv.desktop
-audio/x-vorbis+ogg=mpv.desktop
 
 video/x-matroska=mpv.desktop
 video/x-msvideo=mpv.desktop
