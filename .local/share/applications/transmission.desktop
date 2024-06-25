@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=true
+
+Name=Transmission
+Exec=/home/gene/.scripts/add_torrent_to_transmission.sh %U
