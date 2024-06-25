@@ -8,5 +8,3 @@ Exec=foot lf
 Comment=Launches the lf file manager
 Categories=ConsoleOnly;System;FileTools;FileManager
 Icon=utilities-terminal
-
-MimeType=inode/directory;

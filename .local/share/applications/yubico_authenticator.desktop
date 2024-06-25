@@ -3,8 +3,8 @@ Type=Application
 NoDisplay=false
 
 Name=Yubico Authenticator
-Exec="$HOME/.local/bin/yubico_authenticator/authenticator"
+Exec=/home/gene/.local/bin/yubico_authenticator/authenticator
 
 Categories=Utility;
 Keywords=Yubico;Authenticator;
-Icon=$HOME/.local/bin/yubico_authenticator/linux_support/com.yubico.yubioath.png
+Icon=/home/gene/.local/bin/yubico_authenticator/linux_support/com.yubico.yubioath.png
