@@ -1,6 +1,7 @@
 ### Environment variables ###
 
-# Editor
+# General
+export SCRIPTS=$HOME/.scripts
 export EDITOR=nvim
 
 # History settings

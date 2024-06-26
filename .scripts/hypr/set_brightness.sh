@@ -13,7 +13,7 @@ trap 'rm -f "$LOCKFILE"' EXIT
 
 BRIGHTNESS=$(ddcutil getvcp 10 --terse | cut -d ' ' -f 4)
 
-case $1 in
+case "$1" in
     up)
         if [ "$BRIGHTNESS" -lt 100 ]; then
             ddcutil setvcp 10 + 5

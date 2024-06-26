@@ -30,7 +30,7 @@
 	"format": "{:%I:%M:%S %p}"
     },
     "custom/date": {
-        "exec": "~/.config/waybar/scripts/date.sh",
+        "exec": "~/.scripts/waybar/date.sh",
 	"interval": 60,
 	"format": "{}",
 	"return-type": "string"
