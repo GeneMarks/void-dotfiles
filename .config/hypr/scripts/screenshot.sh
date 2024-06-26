@@ -18,6 +18,6 @@ else
 fi
 
 # Copy screenshot to clipboard
-wl-copy < $SS_FILE
+wl-copy < "$SS_FILE"
 
 notify-send "Screenshot saved" "Screenshot copied and saved to $SS_FILE" -t 6000
