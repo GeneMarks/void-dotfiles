@@ -1,0 +1,40 @@
+def_key "j"
+    scroll_down
+def_key "k"
+    scroll_up
+def_key "h"
+    previous_column
+def_key "l"
+    next_column
+
+def_key "ctrl-u"
+    page_up
+def_key "ctrl-d"
+    page_down
+
+def_key "g"
+    move_home
+def_key "G"
+    move_end
+
+def_key "n"
+    next_found_item
+def_key "N"
+    previous_found_item
+
+def_key "1"
+    show_playlist
+def_key "2"
+    show_media_library
+def_key "3"
+    show_search_engine
+def_key "4"
+    show_playlist_editor
+def_key "5"
+    dummy
+def_key "6"
+    dummy
+def_key "7"
+    dummy
+def_key "8"
+    dummy
