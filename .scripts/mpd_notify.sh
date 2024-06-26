@@ -9,6 +9,11 @@ extract_cover_art() {
 
 while true; do
     CURRENT_SONG="$(mpc current --wait)"
+
+    if [ -z "$CURRENT_SONG" ]; then
+        continue
+    fi
+
     CURRENT_SONG_PATH="$MUSIC_DIR/$(mpc current -f %file%)"
 
     extract_cover_art "$CURRENT_SONG_PATH" "$ALBUM_ART_CACHE" &&
