@@ -3,7 +3,7 @@
 WALLPAPERS_DIR="$HOME/wallpapers"
 WALLPAPER="$HOME/.cache/current_wallpaper"
 
-SELECTED_WALLPAPER=$(find "$WALLPAPERS_DIR" -type f -printf "%f\n" | "$MY_HYPR_SCRIPTS"/bemenu/run_bemenu.sh \
+SELECTED_WALLPAPER=$(find "$WALLPAPERS_DIR" -type f -printf "%f\n" | sort | "$MY_HYPR_SCRIPTS"/bemenu/run_bemenu.sh \
     --list 24 \
     --width-factor 0.16 \
     --prompt 'wallpapers')
