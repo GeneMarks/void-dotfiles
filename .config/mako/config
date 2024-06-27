@@ -1,6 +1,6 @@
 layer=overlay
 font=SystemUI 10
-background-color=#0f1014
+background-color=#0f0f0f
 text-color=#c7bcb7
 border-color=#000000
-progress-color=over #1b1d24
+progress-color=over #1c1c1c

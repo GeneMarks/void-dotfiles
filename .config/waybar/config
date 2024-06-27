@@ -6,12 +6,13 @@
 
     // Modules
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
     "modules-center": [
-        "clock#date"
     ],
     "modules-right": [
+        "clock#date",
         "clock#time"
     ],
 

@@ -7,14 +7,14 @@
 }
 
 window#waybar {
-    background-color: rgba(15, 16, 20, 0.92);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    background-color: #1c1c1c;
 }
 
 #workspaces button {
     padding: 0 6px;
     border: none;
     border-radius: 0;
+    background-color: #0f0f0f;
 }
 
 #workspaces button:hover {
@@ -23,14 +23,14 @@ window#waybar {
     background: none;
     border: none;
     transition: none;
-    background-color: #292a2e;
+    background-color: #141414;
 }
 
 #workspaces button.active {
-    background-color: #000000;
+    background-color: #1c1c1c;
 }
 
 .modules-right {
     padding: 0 12px;
-    background-color: #000000;
+    background-color: #0f0f0f;
 }
