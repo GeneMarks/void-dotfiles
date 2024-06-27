@@ -3,19 +3,19 @@
 MUSIC_DIR="/mnt/syno/Media/Music"
 ALBUM_ART_CACHE="$HOME/.cache/mpd/cover.jpg"
 
-extract_cover_art() {
-    ffmpeg -y -i "$1" -an -c:v copy "$2" 2>/dev/null || true
+get_album_art() {
+    ffmpeg -y -i "$MUSIC_DIR/$(mpc -f %file% current)" -an -c:v copy "$ALBUM_ART_CACHE" &> /dev/null
+
+    # Delete old cache if extraction failed so it isn't in notif
+    if [[ $? -ne 0 ]]; then
+        rm -f "$ALBUM_ART_CACHE"
+    fi
 }
 
 while true; do
-    CURRENT_SONG="$(mpc current --wait)"
-
-    if [ -z "$CURRENT_SONG" ]; then
-        continue
+    STATUS="$(mpc status)"
+    if [[ "$STATUS" == *"[playing]"* ]]; then
+        get_album_art && notify-send "Now playing" "$(mpc -f '%title%\n%albumartist%' current)" -i "$ALBUM_ART_CACHE" -h string:x-canonical-private-synchronous:music-notify -t 6000
     fi
-
-    CURRENT_SONG_PATH="$MUSIC_DIR/$(mpc current -f %file%)"
-
-    extract_cover_art "$CURRENT_SONG_PATH" "$ALBUM_ART_CACHE" &&
-    notify-send "Now playing" "$CURRENT_SONG" -i "$ALBUM_ART_CACHE" -h string:x-canonical-private-synchronous:music-notify -t 6000
+    mpc current --wait > /dev/null
 done
