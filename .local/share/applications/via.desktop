@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=false
+
+Name=VIA
+Exec=/opt/VIA/via-nativia %U
+
+Comment=Yet another keyboard configurator
+Categories=Development;
+Icon=via-nativia
