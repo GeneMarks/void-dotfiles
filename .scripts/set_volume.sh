@@ -3,11 +3,11 @@
 case $1 in
     up)
         wpctl set-mute @DEFAULT_AUDIO_SINK@ 0
-        wpctl set-volume --limit 1 @DEFAULT_AUDIO_SINK@ 5%+
+        wpctl set-volume --limit 1 @DEFAULT_AUDIO_SINK@ 2%+
         ;;
     down)
         wpctl set-mute @DEFAULT_AUDIO_SINK@ 0
-        wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+        wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-
         ;;
     mute)
         wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
