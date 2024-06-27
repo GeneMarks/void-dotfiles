@@ -1,7 +1,10 @@
 #!/bin/bash
 
 MUSIC_DIR="/mnt/syno/Media/Music"
+CACHE_DIR=$HOME/.cache/mpd
 ALBUM_ART_CACHE="$HOME/.cache/mpd/cover.jpg"
+
+mkdir -p "$CACHE_DIR"
 
 get_album_art() {
     ffmpeg -y -i "$MUSIC_DIR/$(mpc -f %file% current)" -an -c:v copy "$ALBUM_ART_CACHE" &> /dev/null
