@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=false
+
+Name=ncmpcpp
+Exec=foot --title "ncmpcpp" -e ncmpcpp
+
+Comment=Play music from mpd
+Keywords=music;player;client;
