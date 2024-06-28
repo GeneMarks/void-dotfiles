@@ -3,7 +3,7 @@ Type=Application
 NoDisplay=false
 
 Name=Thunderbird
-Exec=thunderbird %U
+Exec=(pidof thunderbird && hyprctl dispatch focuswindow initialclass:thunderbird) || thunderbird %U
 
 Comment=Browse your email
 Categories=Network;Email;
