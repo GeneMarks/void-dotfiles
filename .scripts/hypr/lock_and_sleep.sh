@@ -1,4 +1,4 @@
 #!/bin/bash
 
 hyprlock &
-systemctl suspend
+loginctl suspend
