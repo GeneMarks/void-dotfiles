@@ -15,15 +15,22 @@ window#waybar {
     border: none;
     border-radius: 0;
     background-color: #0f0f0f;
+    background-image: url("/home/gene/.config/waybar/square.png");
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 #workspaces button:hover {
     box-shadow: none;
     text-shadow: none;
-    background: none;
     border: none;
     transition: none;
     background-color: #141414;
+}
+
+#workspaces button.empty {
+    background-image: none;
 }
 
 #workspaces button.active {
