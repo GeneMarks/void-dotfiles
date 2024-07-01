@@ -30,6 +30,9 @@
         },
         "format": "{name}",
     },
+    "hyprland/window": {
+        "max-length": 80
+    },
     "clock#date": {
     	"interval": 3600,
         "format": "{:%a %B %d}"
