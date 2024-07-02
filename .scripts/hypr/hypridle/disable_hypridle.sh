@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 HYPRIDLE_PID=$(pidof hypridle)
 

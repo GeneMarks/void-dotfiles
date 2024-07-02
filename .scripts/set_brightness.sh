@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 
 LOCKFILE="/tmp/brightness_control.lock"

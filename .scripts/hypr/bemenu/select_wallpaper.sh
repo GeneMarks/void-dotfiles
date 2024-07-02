@@ -9,7 +9,7 @@ SELECTED_WALLPAPER=$(find "$WALLPAPERS_DIR" -type f -printf "%f\n" | sort | "$MY
     --prompt 'wallpapers')
 
 if [ -n "$SELECTED_WALLPAPER" ]; then
-    SELECTED_WALLPAPER=$WALLPAPERS_DIR/$SELECTED_WALLPAPER
+    SELECTED_WALLPAPER="$WALLPAPERS_DIR/$SELECTED_WALLPAPER"
 
     ln -sf "$SELECTED_WALLPAPER" "$WALLPAPER"
     pkill swaybg

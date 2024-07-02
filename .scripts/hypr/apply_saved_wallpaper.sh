@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ -f "$HOME/.cache/current_wallpaper" ]; then
     pkill swaybg
