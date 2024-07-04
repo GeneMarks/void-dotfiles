@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=false
+
+Name=LibreOffice Writer
+Exec=libreoffice --writer %U
+
+Comment=Create and edit text and graphics in letters, reports, documents and Web pages.
+Categories=Office;WordProcessor;X-Red-Hat-Base;
+Keywords=Text;Letter;Fax;Document;OpenDocument Text;Microsoft Word;Microsoft Works;Lotus WordPro;OpenOffice Writer;CV;odt;doc;docx;rtf;
+Icon=libreoffice-writer
+
+Actions=NewDocument;
+
+[Desktop Action NewDocument]
+Name=New Document
+Exec=libreoffice --writer
+Icon=document-new
