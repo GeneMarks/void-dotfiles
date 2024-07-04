@@ -3,7 +3,7 @@ Type=Application
 NoDisplay=false
 
 Name=Thunderbird
-Exec=(pidof thunderbird && hyprctl dispatch focuswindow initialclass:thunderbird) || thunderbird %U
+Exec=/home/gene/.scripts/hypr/shortcuts/thunderbird.sh
 
 Comment=Browse your email
 Categories=Network;Email;

@@ -3,7 +3,7 @@ Type=Application
 NoDisplay=false
 
 Name=ncmpcpp
-Exec=(pidof ncmpcpp && hyprctl dispatch focuswindow initialtitle:ncmpcpp) || foot --title "ncmpcpp" -e ncmpcpp
+Exec=/home/gene/.scripts/hypr/shortcuts/ncmpcpp.sh
 
 Comment=Play music from mpd
 Keywords=music;player;client;
