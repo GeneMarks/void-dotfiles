@@ -3,7 +3,7 @@ Type=Application
 NoDisplay=false
 
 Name=Spek
-Exec=spek %f
+Exec=spek %F
 
 Comment=View spectrograms of your audio files
 Categories=AudioVideo;Audio;
