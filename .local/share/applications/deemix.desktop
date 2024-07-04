@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-NoDisplay=false
-
-Name=deemix
-Exec=/home/gene/.local/bin/deemix.AppImage
