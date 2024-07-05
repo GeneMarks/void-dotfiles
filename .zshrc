@@ -15,3 +15,9 @@ source $HOME/.config/zsh/completion.zsh
 
 # Load external scripts
 source $HOME/.config/zsh/external_scripts.zsh
+
+# Load plugins
+PLUGINS_DIR="$HOME/.config/zsh/plugins"
+for file in $PLUGINS_DIR/*.zsh; do
+    source "$file"
+done
