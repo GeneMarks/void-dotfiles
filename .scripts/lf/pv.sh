@@ -14,7 +14,12 @@ generate_video_frame() {
 }
 
 extract_cover_art() {
-    ffmpeg -y -i "$1" -an -c:v copy "$2"
+    ffmpeg -y -i "$1" -an -c:v copy "$2" &> /dev/null
+
+    # Delete old cache if extraction failed
+    if [[ $? -ne 0 ]]; then
+        rm -f "$ALBUM_ART_CACHE"
+    fi
 }
 
 case "$1" in
