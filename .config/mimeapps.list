@@ -1,12 +1,12 @@
 [Default Applications]
 inode/directory=lf.desktop
 
-image/jpeg=feh.desktop
-image/png=feh.desktop
-image/gif=feh.desktop
-image/bmp=feh.desktop
-image/tiff=feh.desktop
-image/webp=feh.desktop
+image/jpeg=imv.desktop
+image/png=imv.desktop
+image/gif=imv.desktop
+image/bmp=imv.desktop
+image/tiff=imv.desktop
+image/webp=imv.desktop
 
 audio/flac=mpv.desktop
 audio/x-flac=mpv.desktop
