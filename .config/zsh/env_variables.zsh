@@ -1,6 +1,6 @@
 ### Environment variables ###
 
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 export SCRIPTS=$HOME/.scripts
 export EDITOR=nvim
