@@ -1,3 +1,25 @@
+# options
 set hidden true
 set sixel true
 set previewer ~/.scripts/lf/pv.sh
+
+# keymaps
+map G bottom
+map v :toggle
+map V :invert
+
+map gm cd /run/media/gene
+map gs cd /mnt/syno
+
+map D trash $fs
+
+# commands
+cmd trash ${{
+    if [ -z "$fs" ]; then
+        return
+    fi
+    printf "$fs\n"
+    printf "trash?[y/n]"
+    read ans
+    [ "$ans" = "y" ] && trash put $fs
+}}
