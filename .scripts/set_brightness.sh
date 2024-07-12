@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 LOCKFILE="/tmp/brightness_control.lock"
 
 if [ -e "$LOCKFILE" ]; then
