@@ -2,4 +2,4 @@
 
 . "$HOME/.scripts/hypr/set_env_variables.sh"
 
-exec Hyprland
+exec dbus-run-session Hyprland
