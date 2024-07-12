@@ -23,7 +23,7 @@ extract_cover_art() {
 }
 
 case "$1" in
-    *.png|*.jpg|*.jpeg|*.gif|*.bmp|*.tiff)
+    *.png|*.jpg|*.jpeg|*.gif|*.bmp|*.tiff|*.webp)
         print_image "$1" "$2" "$3"
         ;;
 
