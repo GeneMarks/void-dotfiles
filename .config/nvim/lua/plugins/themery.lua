@@ -2,7 +2,6 @@ return {
     "zaldih/themery.nvim",
     config = function()
         require("themery").setup({
-            themeConfigFile = "~/.dotfiles/.config/nvim/lua/core/colorscheme.lua",
             themes = {
                 {
                     name = "Ayu Dark",

@@ -9,16 +9,17 @@ return {
         local wk = require("which-key")
         wk.setup({
             icons = {
+                mappings = false,
                 breadcrumb = "»",
                 separator = "›",
                 group = "+"
             },
         })
 
-        wk.register({ ["<leader>b"] = { name = "+Buffers" } }, { mode = "n" })
-        wk.register({ ["<leader>d"] = { name = "+Trouble" } }, { mode = "n" })
-        wk.register({ ["<leader>h"] = { name = "+Gitsigns" } }, { mode = { "n", "v" } })
-        wk.register({ ["<leader>t"] = { name = "+Tabs" } }, { mode = "n" })
-        wk.register({ ["<leader>f"] = { name = "+Telescope" } }, { mode = "n" })
+        wk.add({ "<leader>b", group = "Buffers" })
+        wk.add({ "<leader>d", group = "Trouble" })
+        wk.add({ "<leader>h", group = "Gitsigns" })
+        wk.add({ "<leader>t", group = "Tabs" })
+        wk.add({ "<leader>f", group = "Telescope" })
     end
 }
