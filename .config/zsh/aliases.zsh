@@ -8,4 +8,5 @@ alias rb='sudo umount -a -r -t nfs,nfs4,cifs && loginctl reboot'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-alias t='trash'
+alias tp='trash-put'
+alias dv='yt-dlp'
