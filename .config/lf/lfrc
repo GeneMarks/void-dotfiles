@@ -15,11 +15,19 @@ map D trash $fs
 
 # commands
 cmd trash ${{
-    if [ -z "$fs" ]; then
-        return
+    if [ -z "$fx" ]; then
+        exit
     fi
-    printf "$fs\n"
+
+    printf "$fx\n"
     printf "trash?[y/n]"
     read ans
-    [ "$ans" = "y" ] && trash-put "$fs"
+
+    if [ "$ans" != "y" ]; then
+        exit
+    fi
+
+    echo "$fx" | while IFS= read -r file_path; do
+        trash-put "$file_path"
+    done
 }}
