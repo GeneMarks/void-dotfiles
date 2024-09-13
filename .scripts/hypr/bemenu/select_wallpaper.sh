@@ -13,5 +13,5 @@ if [ -n "$SELECTED_WALLPAPER" ]; then
 
     ln -sf "$SELECTED_WALLPAPER" "$WALLPAPER"
     pkill swaybg
-    swaybg -i "$WALLPAPER" &
+    swaybg --mode fill -i "$WALLPAPER" &
 fi
