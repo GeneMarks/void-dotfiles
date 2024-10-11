@@ -16,6 +16,18 @@ return {
                     colorscheme = "ayu-mirage",
                 },
                 {
+                    name = "Bamboo Light",
+                    colorscheme = "bamboo-light",
+                },
+                {
+                    name = "Bamboo Multiplex",
+                    colorscheme = "bamboo-multiplex",
+                },
+                {
+                    name = "Bamboo Volgaris",
+                    colorscheme = "bamboo-vulgaris",
+                },
+                {
                     name = "Catppuccin Frappe",
                     colorscheme = "catppuccin-frappe",
                 },
@@ -34,6 +46,18 @@ return {
                 {
                     name = "Github Dark High Contrast",
                     colorscheme = "github_dark_high_contrast",
+                },
+                {
+                    name = "Kanagawa Wave",
+                    colorscheme = "kanagawa-wave"
+                },
+                {
+                    name = "Kanagawa Dragon",
+                    colorscheme = "kanagawa-dragon"
+                },
+                {
+                    name = "Kanagawa Lotus",
+                    colorscheme = "kanagawa-lotus"
                 },
                 {
                     name = "Tokyonight Day",

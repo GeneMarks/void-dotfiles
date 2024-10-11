@@ -1,11 +1,8 @@
 return {
     "rmagatti/auto-session",
-    opts = {
-        auto_session_allowed_dirs = {
-            "~/.dotfiles/*",
-        },
-        bypass_session_save_file_types = {
-            "fugitive",
-        },
-    },
+    config = function()
+        require("auto-session").setup()
+
+        vim.keymap.set("n", "<leader>fs", "<CMD>SessionSearch<CR>", { desc = "Search sessions" })
+    end
 }

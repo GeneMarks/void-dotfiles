@@ -8,7 +8,7 @@ return {
         local servers = {
             "clangd",
             "jdtls",
-            "tsserver",
+            "ts_ls",
             "eslint",
             "lua_ls",
             "tailwindcss"
