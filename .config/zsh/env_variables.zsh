@@ -1,6 +1,9 @@
 ### Environment variables ###
 
-export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 export SCRIPTS=$HOME/.scripts
 export EDITOR=nvim
