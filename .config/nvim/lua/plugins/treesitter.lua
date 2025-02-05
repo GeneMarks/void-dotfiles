@@ -7,6 +7,7 @@ return {
             ensure_installed = {
                 "c",
                 "cpp",
+                "c_sharp",
                 "css",
                 "cmake",
                 "dockerfile",

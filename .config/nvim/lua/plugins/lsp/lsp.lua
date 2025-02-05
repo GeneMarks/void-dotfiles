@@ -7,10 +7,12 @@ return {
     config = function ()
         local servers = {
             "clangd",
-            "jdtls",
-            "tsserver",
+            "csharp_ls",
             "eslint",
+            "jdtls",
             "lua_ls",
+            "pyright",
+            "ts_ls",
             "tailwindcss"
         }
 

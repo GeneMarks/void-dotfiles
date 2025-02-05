@@ -44,5 +44,8 @@ vim.opt.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos"
 -- Fast update time
 vim.opt.updatetime = 250
 
+-- Use zsh as shell
+vim.opt.shell = "/usr/bin/zsh"
+
 -- Enable full color terminal
 vim.opt.termguicolors = true
