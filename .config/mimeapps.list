@@ -68,6 +68,9 @@ text/x-sql=nvim.desktop
 
 application/pdf=firefox.desktop
 
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+
 message/rfc822=thunderbird.desktop
 x-scheme-handler/mailto=thunderbird.desktop
 
