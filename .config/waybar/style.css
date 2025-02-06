@@ -19,7 +19,9 @@ window#waybar.empty {
     border: none;
     border-radius: 0;
     background-color: #0f0f0f;
-    background-image: url("/home/gene/.config/waybar/square.png");
+    background-image:
+        linear-gradient(#c7bcb7, #c7bcb7),
+        url("/home/gene/.config/waybar/square.png");
     background-size: 5px 5px;
     background-repeat: no-repeat;
     background-position: top left;
