@@ -1,7 +1,6 @@
 #!/bin/bash
 
 WALLPAPERS_DIR="$HOME/wallpapers"
-WALLPAPER="$HOME/.cache/current_wallpaper"
 
 SELECTED_WALLPAPER=$(find "$WALLPAPERS_DIR" -type f -printf "%f\n" | sort | "$SCRIPTS/bemenu/run_bemenu.sh" \
     --list 24 \
@@ -11,7 +10,5 @@ SELECTED_WALLPAPER=$(find "$WALLPAPERS_DIR" -type f -printf "%f\n" | sort | "$SC
 if [ -n "$SELECTED_WALLPAPER" ]; then
     SELECTED_WALLPAPER="$WALLPAPERS_DIR/$SELECTED_WALLPAPER"
 
-    ln -sf "$SELECTED_WALLPAPER" "$WALLPAPER"
-    pkill swaybg
-    swaybg --mode fill -i "$WALLPAPER" &
+    swww img "$SELECTED_WALLPAPER" -t "none"
 fi
