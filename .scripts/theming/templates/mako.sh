@@ -1,10 +1,11 @@
 #!/bin/bash
 
+source "$SCRIPTS/theming/adjust_hex.sh"
+
 THEME_FILE="$1"
 CONFIG_FILE="$HOME/.config/mako/config"
 
 source "$THEME_FILE"
-source "$SCRIPTS/theming/adjust_hex.sh"
 
 progress_color=$(adjust_hex "$base00" -20)
 
