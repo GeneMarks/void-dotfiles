@@ -4,6 +4,9 @@ source $HOME/.config/zsh/env_variables.zsh
 # Load aliases
 source $HOME/.config/zsh/aliases.zsh
 
+# Load functions
+source $HOME/.config/zsh/functions.zsh
+
 # Load settings
 source $HOME/.config/zsh/settings.zsh
 
