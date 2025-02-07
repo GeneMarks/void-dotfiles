@@ -1,26 +1,29 @@
+@import "colors.css";
+
 * {
     padding: 0;
     margin: 0;
     font-family: "SystemUI";
     font-size: 12px;
-    color: #c7bcb7;
 }
 
 window#waybar {
-    background-color: #1c1c1c;
+    color: @base03;
+    background-color: @base00;
 }
 
 window#waybar.empty {
-    background-color: #0f0f0f;
+    background-color: @base02;
 }
 
 #workspaces button {
     padding: 0 6px;
     border: none;
     border-radius: 0;
-    background-color: #0f0f0f;
+    color: @base05;
+    background-color: @base02;
     background-image:
-        linear-gradient(#c7bcb7, #c7bcb7),
+        linear-gradient(@base03, @base03),
         url("/home/gene/.config/waybar/square.png");
     background-size: 5px 5px;
     background-repeat: no-repeat;
@@ -32,7 +35,8 @@ window#waybar.empty {
     text-shadow: none;
     border: none;
     transition: none;
-    background-color: #141414;
+    color: @base07;
+    background-color: @base06;
 }
 
 #workspaces button.empty {
@@ -40,10 +44,12 @@ window#waybar.empty {
 }
 
 #workspaces button.active {
-    background-color: #1c1c1c;
+    color: @base03;
+    background-color: @base00;
 }
 
 .modules-right {
     padding: 0 12px;
-    background-color: #0f0f0f;
+    color: @base05;
+    background-color: @base02;
 }
