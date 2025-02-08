@@ -6,8 +6,9 @@ generate_video_frame() {
     local output_file="$2"
 
     DURATION=$(ffprobe -i "$input_file" -show_entries format=duration -v quiet -of csv="p=0")
-    FRAME_TIME=$(echo "$DURATION * 0.05" | bc)
-    ffmpeg -y -ss "$FRAME_TIME" -i "$input_file" -vframes 1 "$output_file" || rm -f "$output_file"
+    FRAME_TIME=$(echo "scale=3; $DURATION * 0.05" | bc | sed 's/^\./0./')
+
+    ffmpeg -y -ss "$FRAME_TIME" -i "$input_file" -vframes 1 -update 1 "$output_file" || rm -f "$output_file"
 }
 
 extract_gif_frame() {
@@ -49,7 +50,7 @@ if [[ "$EXT" == "jpg" || "$EXT" == "jpeg" || "$EXT" == "png" ]]; then
     ln -sf "$CHOSEN_WALLPAPER" "$CACHED_WALLPAPER"
     swaybg --mode fill -i "$CACHED_WALLPAPER" &
 elif [[ "$EXT" == "gif" || "$EXT" == "mp4" || "$EXT" == "webm" || "$EXT" == "mkv" ]]; then
-    PREVIEW_IMAGE="$CACHED_PREVIEWS_DIR/$(basename "$CHOSEN_WALLPAPER").jpg"
+    PREVIEW_IMAGE="$CACHED_PREVIEWS_DIR/$(basename "$CHOSEN_WALLPAPER").png"
     rm -f "$PREVIEW_IMAGE"
 
     if [[ "$EXT" == "gif" ]]; then

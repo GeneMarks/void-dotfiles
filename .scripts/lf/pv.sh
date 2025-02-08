@@ -9,8 +9,8 @@ print_image() {
 
 generate_video_frame() {
     DURATION=$(ffprobe -i "$1" -show_entries format=duration -v quiet -of csv="p=0")
-    FRAME_TIME=$(echo "$DURATION * 0.05" | bc)
-    ffmpeg -y -ss "$FRAME_TIME" -i "$1" -vframes 1 "$2" || rm -f "$2"
+    FRAME_TIME=$(echo "scale=3; $DURATION * 0.05" | bc | sed 's/^\./0./')
+    ffmpeg -y -ss "$FRAME_TIME" -i "$1" -vframes 1 -update 1 "$2" || rm -f "$2"
 }
 
 extract_gif_frame() {
@@ -33,7 +33,7 @@ case "$1" in
         ;;
 
     *.mkv|*.mp4|*.avi|*.mov)
-        VIDEO_THUMB_CACHE=$CACHE_DIR/video_thumb.jpg
+        VIDEO_THUMB_CACHE=$CACHE_DIR/video_thumb.png
         generate_video_frame "$1" "$VIDEO_THUMB_CACHE"
         print_image "$VIDEO_THUMB_CACHE" "$2" "$3"
         ;;
