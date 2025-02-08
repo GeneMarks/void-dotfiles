@@ -29,5 +29,5 @@ declare -A bemenu_colors=(
 )
 
 for option in "${!bemenu_colors[@]}"; do
-    sed -i "s|$option '[#a-fA-F0-9]*'|$option '${bemenu_colors[$option]}'|" "$CONFIG_FILE"
+    sed -i "s|$option \"[#a-fA-F0-9]*\"|$option \"${bemenu_colors[$option]}\"|" "$CONFIG_FILE"
 done

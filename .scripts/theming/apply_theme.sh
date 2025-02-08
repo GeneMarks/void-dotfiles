@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Check if an argument (theme file) is provided
 if [[ -z "$1" ]]; then
     echo "Usage: $0 <theme-file>"
     exit 1
@@ -9,7 +8,6 @@ fi
 THEME_FILE="$1"
 TEMPLATES_DIR="$SCRIPTS/theming/templates"
 
-# Check if theme file exists
 if [[ ! -f "$THEME_FILE" ]]; then
     echo "Error: Theme file not found: $THEME_FILE"
     exit 1
