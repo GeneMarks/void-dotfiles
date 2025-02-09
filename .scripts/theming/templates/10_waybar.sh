@@ -10,4 +10,4 @@ while IFS="=" read -r key value; do
 done < "$THEME_FILE"
 
 pkill -x waybar
-hyprctl dispatch exec waybar
+waybar & disown
