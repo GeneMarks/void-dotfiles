@@ -4,7 +4,6 @@ set sixel true
 set previewer ~/.scripts/lf/pv.sh
 
 # keymaps
-map G bottom
 map v :toggle
 map V :invert
 
