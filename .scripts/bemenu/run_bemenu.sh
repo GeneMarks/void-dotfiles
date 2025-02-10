@@ -12,18 +12,18 @@ bemenu \
     --scrollbar autohide \
     --prompt "bemenu" \
     --fn "SystemUI 10" \
-    --ff "#cfcfcf" \
-    --fb "#590556" \
-    --nf "#cfcfcf" \
-    --nb "#5e065b" \
-    --af "#cfcfcf" \
-    --ab "#590556" \
-    --tf "#cfcfcf" \
-    --tb "#590556" \
-    --hf "#000000" \
-    --hb "#b347a4" \
-    --cf "#cfcfcf" \
-    --cb "#cfcfcf" \
-    --scf "#de6000" \
-    --scb "#5e065b" \
+    --ff "#000000" \
+    --fb "#b8b8b8" \
+    --nf "#000000" \
+    --nb "#C0C0C0" \
+    --af "#000000" \
+    --ab "#b8b8b8" \
+    --tf "#000000" \
+    --tb "#b8b8b8" \
+    --hf "#ffffff" \
+    --hb "#000080" \
+    --cf "#000000" \
+    --cb "#000000" \
+    --scf "#525252" \
+    --scb "#C0C0C0" \
     "$@"
