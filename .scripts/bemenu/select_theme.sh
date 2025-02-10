@@ -2,7 +2,7 @@
 
 THEME_DIR="$HOME/.themes"
 
-SELECTED_THEME=$(find -L "$THEME_DIR" -type f -name "*.theme" | sed 's|.*/||' | sed 's/\.theme$//' | \
+SELECTED_THEME=$(find -L "$THEME_DIR" -type f -name "*.theme" | sed 's|.*/||' | sed 's/\.theme$//' | sort | \
     "$SCRIPTS/bemenu/run_bemenu.sh" \
     --list 12 \
     --width-factor 0.16 \
