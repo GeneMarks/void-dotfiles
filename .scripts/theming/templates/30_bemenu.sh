@@ -4,7 +4,6 @@ THEME_FILE="$1"
 CONFIG_FILE="$SCRIPTS/bemenu/run_bemenu.sh"
 
 declare -A colors
-
 while IFS="=" read -r key value; do
     if [[ "$key" =~ ^base[0-9A-F]+$ ]]; then
         colors[$key]="$value"
@@ -28,6 +27,6 @@ declare -A bemenu_colors=(
     ["--scb"]="${colors[base00]}"
 )
 
-for option in "${!bemenu_colors[@]}"; do
-    sed -i "s|$option \"[#a-fA-F0-9]*\"|$option \"${bemenu_colors[$option]}\"|" "$CONFIG_FILE"
+for property in "${!bemenu_colors[@]}"; do
+    sed -i "s|$property \"[#a-fA-F0-9]*\"|$property \"${bemenu_colors[$property]}\"|" "$CONFIG_FILE"
 done
