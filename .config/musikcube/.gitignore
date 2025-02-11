@@ -1,0 +1,12 @@
+1/
+cache/
+libraries.json
+log.txt
+playback.json
+plugin_httpidatastream.json
+plugin_musikcubeserver(wss,http).json
+plugin_nullioutput.json
+plugin_pulseaudioioutput.json
+plugin_supereqidsp.json
+session.json
+stderr.txt
