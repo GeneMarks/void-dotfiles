@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=false
+
+Name=musikcube
+Exec=/home/gene/.scripts/hypr/shortcuts/musikcube.sh
+
+Comment=terminal-based music player
+Categories=AudioVideo;Player;Audio;
+Icon=musikcube
