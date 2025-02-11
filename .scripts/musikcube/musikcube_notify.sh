@@ -29,8 +29,10 @@ current_track=$track
 
 while true; do
     sleep 1
-    get_track
 
+    pgrep -x "musikcube" > /dev/null || continue
+
+    get_track
     if [ "$track" == "$current_track" ] || [ "$track" == "" ]; then
         continue
     fi
