@@ -1,14 +1,14 @@
 # options
 set hidden true
 set sixel true
-set previewer ~/.scripts/lf/pv.sh
+set previewer "~/.scripts/lf/pv.sh"
 
 # keymaps
 map v :toggle
 map V :invert
 
-map gm cd /run/media/gene
-map gs cd /mnt/syno
+map gm cd "/run/media/gene"
+map gs cd "/mnt/syno"
 
 map D trash $fs
 
