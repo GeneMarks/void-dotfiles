@@ -8,8 +8,8 @@ print_image() {
 }
 
 generate_video_frame() {
-    DURATION=$(ffprobe -i "$1" -show_entries format=duration -v quiet -of csv="p=0")
-    FRAME_TIME=$(echo "scale=3; $DURATION * 0.05" | bc | sed 's/^\./0./')
+    local DURATION=$(ffprobe -i "$1" -show_entries format=duration -v quiet -of csv="p=0")
+    local FRAME_TIME=$(echo "scale=3; $DURATION * 0.05" | bc | sed 's/^\./0./')
     ffmpeg -y -ss "$FRAME_TIME" -i "$1" -vframes 1 -update 1 "$2" || rm -f "$2"
 }
 
