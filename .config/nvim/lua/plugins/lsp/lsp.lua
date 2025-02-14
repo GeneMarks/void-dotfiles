@@ -7,7 +7,6 @@ return {
     config = function ()
         local servers = {
             "clangd",
-            "csharp_ls",
             "eslint",
             "jdtls",
             "lua_ls",
