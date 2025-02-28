@@ -53,3 +53,5 @@ declare -A musikcube_colors=(
 for property in "${!musikcube_colors[@]}"; do
     sed -i "s|\"$property\":{[^}]*\"hex\":\"#[A-Fa-f0-9]*\"|\"$property\":{\"hex\":\"${musikcube_colors[$property]}\"|" "$CONFIG_FILE"
 done
+
+pkill -x musikcube
