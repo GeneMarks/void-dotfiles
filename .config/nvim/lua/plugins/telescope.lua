@@ -8,6 +8,14 @@ return {
         -- Configs
         local telescope = require("telescope")
         telescope.setup({
+            pickers = {
+                find_files = {
+                    find_command = { "rg", "--files", "--hidden", "-g", "!.git" }
+                },
+                live_grep = {
+                    vimgrep_arguments = { "rg", "--hidden", "--color=never", "--no-heading", "--with-filename", "--line-number", "--column", "--smart-case" }
+                },
+            },
             extensions = {
                 undo = {},
             },
