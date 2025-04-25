@@ -16,26 +16,6 @@ return {
                     colorscheme = "bamboo-vulgaris",
                 },
                 {
-                    name = "Catppuccin Frappe",
-                    colorscheme = "catppuccin-frappe",
-                },
-                {
-                    name = "Catppuccin Latte",
-                    colorscheme = "catppuccin-latte",
-                },
-                {
-                    name = "Catppuccin Macchiato",
-                    colorscheme = "catppuccin-macchiato",
-                },
-                {
-                    name = "Catppuccin Mocha",
-                    colorscheme = "catppuccin-mocha",
-                },
-                {
-                    name = "Github Dark",
-                    colorscheme = "github_dark",
-                },
-                {
                     name = "Github Dark High Contrast",
                     colorscheme = "github_dark_high_contrast",
                 },
