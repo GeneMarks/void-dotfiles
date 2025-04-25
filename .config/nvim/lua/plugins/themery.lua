@@ -4,18 +4,6 @@ return {
         require("themery").setup({
             themes = {
                 {
-                    name = "Ayu Dark",
-                    colorscheme = "ayu-dark",
-                },
-                {
-                    name = "Ayu Light",
-                    colorscheme = "ayu-light",
-                },
-                {
-                    name = "Ayu Mirage",
-                    colorscheme = "ayu-mirage",
-                },
-                {
                     name = "Bamboo Light",
                     colorscheme = "bamboo-light",
                 },
@@ -62,22 +50,6 @@ return {
                 {
                     name = "No Clown Fiesta",
                     colorscheme = "no-clown-fiesta"
-                },
-                {
-                    name = "Tokyonight Day",
-                    colorscheme = "tokyonight-day",
-                },
-                {
-                    name = "Tokyonight Moon",
-                    colorscheme = "tokyonight-moon",
-                },
-                {
-                    name = "Tokyonight Night",
-                    colorscheme = "tokyonight-night",
-                },
-                {
-                    name = "Tokyonight Storm",
-                    colorscheme = "tokyonight-storm",
                 },
                 {
                     name = "Oxocarbon Dark",
