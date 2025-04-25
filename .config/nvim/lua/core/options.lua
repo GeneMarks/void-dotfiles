@@ -49,3 +49,12 @@ vim.opt.shell = "/usr/bin/zsh"
 
 -- Enable full color terminal
 vim.opt.termguicolors = true
+
+-- Set cursor shape and use highlight groups
+vim.opt.guicursor = {
+    "n-v-c:block-Cursor",
+    "i-ci-ve:ver25-iCursor",
+    "r-cr:hor20-rCursor",
+    "o:hor50",
+    "a:blinkon0"
+}
