@@ -8,7 +8,7 @@
   "ColorTheme": "theme",
   "DisableAlbumArtistFallback": false,
   "DisableCustomColors": false,
-  "DisableRatingColumn": false,
+  "DisableRatingColumn": true,
   "DisableWindowTitleUpdates": true,
   "FirstRunSettingsDisplayed": true,
   "IndexerLogEnabled": false,
