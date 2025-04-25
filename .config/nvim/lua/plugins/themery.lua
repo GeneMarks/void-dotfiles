@@ -32,6 +32,10 @@ return {
                     colorscheme = "catppuccin-mocha",
                 },
                 {
+                    name = "Github Dark",
+                    colorscheme = "github_dark",
+                },
+                {
                     name = "Github Dark High Contrast",
                     colorscheme = "github_dark_high_contrast",
                 },
@@ -46,6 +50,20 @@ return {
                 {
                     name = "Kanagawa Lotus",
                     colorscheme = "kanagawa-lotus"
+                },
+                {
+                    name = "Mellifluous",
+                    colorscheme = "mellifluous",
+                    before = [[
+                        vim.opt.background = "dark"
+                    ]],
+                },
+                {
+                    name = "Mellifluous Light",
+                    colorscheme = "mellifluous",
+                    before = [[
+                        vim.opt.background = "light"
+                    ]],
                 },
                 {
                     name = "No Clown Fiesta",
